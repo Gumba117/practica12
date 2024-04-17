@@ -12,3 +12,17 @@ img{
     width: 50%;
     height: auto;
 }
+image{
+    width: 50%;
+    height: auto;
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+    color: #f3f3f3;
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    color: #f3f3f3;
+}
