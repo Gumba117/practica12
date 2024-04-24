@@ -1,28 +1,97 @@
-html{
-    background-color: #4d4d4d;
-    font-family: Times, serif;
-    font-size: 17px;
-    color: #f3f3f3;
+/**
+Para poner en práctica lo aprendido sobre CSS, crea un archivo style.css, enlázalo al documento HTML de la Práctica 12 y aplica
+
+los siguientes estilos:
+• Define un tamaño del letra al body de 16px. 
+
+• Define una familia de fuente de Google Fonts a la etiqueta body.
+• Define un color de letra y un color de fondo a la etiqueta body.
+
+• Define un color de letra a los enlaces.
+• Define un color de letra en el estado hover a los enlaces.
+
+• Aplica la propiedad max-width:100%; a la etiqueta img y iframe para que se vuelvan responsivas.
+
+• Aplica la propiedad width: 100%; a la tabla para que se adapte al tamaño de su contenedor.
+
+• Crea 10 clases utilitarias de CSS para aplicar estilos a las etiquetas HTML de tu documento.
+• Crea 3 variables CSS y aplícalas en alguna regla o selector CSS.
+
+
+Adicionalmente agrega la siguiente información a la etiqueta head de tu documento:
+• Título. /
+• Meta descripción.
+• Configuración de idioma en español.
+• Configuración de la etiqueta viewport.
+• Codificación de caracteres UTF-8.
+• Links hacia una Fuente de Google Fonts.
+• Link a tu hoja de estilos CSS.
+• Link hacia el favicon.
+Actualiza tu repositorio en GitHub y despliega el proyecto en GitHub Pages.
+En la tarea sólo agrega el enlace de tu repositorio de GitHub.
+ */
+:root{
+    --color-red: #ff0000;
+    --color-letra: #f3f3f3;
+    --color-extra: #00f7ff;
+    --color-fondo: #000000;
+}
+body{
+    font-size: 16px;
+    font-family: "Sedan", serif;
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+}
+a{
+    color: var(--color-letra);
+}
+a:hover{
+    color: var(--color-red);
+    font-size: 2rem;
+    transition: 0.5s ease-out;
+    
 }
 video{
     width: 100%;
     height: auto;
 }
-img{
-    width: 50%;
+img, image, iframe{
+    width: 50%;/*Lo puse asi para que no explote :c*/
     height: auto;
 }
-image{
-    width: 50%;
-    height: auto;
+table{
+    width: 100%;
+}
+table:hover{
+    color: var(--color-fondo);
+    background-color: var(--color-letra);
+    transition: 1s ease-out;
 }
 h1{
     text-align: center;
-    font-size: 2em;
-    color: #f3f3f3;
+    font-size: 2rem;
+    color: var(--color-letra);
 }
-h2{
+
+.titulos{
     text-align: center;
-    font-size: 1.5em;
-    color: #f3f3f3;
+    font-size: 1.5rem;
+    color: var(--color-letra);
+}
+
+.sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sedan-regular-italic {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+.tablas{
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--color-extra);
 }
